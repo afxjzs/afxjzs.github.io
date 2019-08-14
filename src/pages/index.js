@@ -1,8 +1,25 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
+// import Image from '../components/image'
+
+const TitleAndDescription = () => {
+  return (
+    <StaticQuery
+      query={graphql`
+        query {
+          site {
+            siteMetadata {
+              title
+            }
+          }
+        }
+      `}
+      render={data => <div>{data.site.siteMetadata.title}</div>}
+    />
+  )
+}
 
 const IndexPage = () => (
   <Layout>
@@ -12,6 +29,7 @@ const IndexPage = () => (
       <a href="https://www.prettyinstant.com">Pretty Instant, Inc</a>
     </p>
     <Link to="/about/">About</Link>
+    <TitleAndDescription />
   </Layout>
 )
 
