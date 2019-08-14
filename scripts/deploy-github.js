@@ -4,7 +4,7 @@ ghpages.publish(
   'public',
   {
     branch: 'master',
-    repo: 'https://github.com/afxjzs/doug-is.git',
+    repo: 'https://github.com/afxjzs/afxjzs.github.io.git',
   },
   () => {
     console.log('Deploy Complete!')
