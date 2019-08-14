@@ -6,8 +6,11 @@ import Image from '../components/image'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hi</h1>
-    <p>I'm Doug. Co-founder / CTO of <a href="https://www.prettyinstant.com">Pretty Instant, Inc</a></p>
+    <h1>Hola</h1>
+    <p>
+      I'm Doug. Co-founder / CTO of{' '}
+      <a href="https://www.prettyinstant.com">Pretty Instant, Inc</a>
+    </p>
     <Link to="/about/">About</Link>
   </Layout>
 )
