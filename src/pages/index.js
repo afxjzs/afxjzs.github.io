@@ -25,7 +25,7 @@ const IndexPage = () => (
   <Layout>
     <h1>Hola</h1>
     <p>
-      I'm Doug. Co-founder / CTO of{' '}
+      I'm Doug! Co-founder / CTO of{' '}
       <a href="https://www.prettyinstant.com">Pretty Instant, Inc</a>
     </p>
     <Link to="/about/">About</Link>
